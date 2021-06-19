@@ -10,7 +10,7 @@
  *
  *	@param	size	Taille en pixels que doit prendre la fenêtre en hauteur et largeur
  */
-function WindowOnImage(id, size, path){
+function WindowOnImage(id, path, size){
 		
 		// Elément auquel ajouter la fenêtre 
 		var _id = id;
@@ -23,9 +23,9 @@ function WindowOnImage(id, size, path){
 		// Dimensions de la fenêtre 
 		var _size = size;
 		
-		var _area = "";
+		var _area = "" ;
 		
-		var _areaimg ="";
+		var _areaimg = "" ;
 		
 		// Ajout d'evenements à un objet (Multiplateforme) 
 		addEvent = function(element, event, func) {
