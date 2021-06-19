@@ -22,3 +22,5 @@ Vous pourrez toujours [télécharger les fichiers](https://github.com/Emilien-B/
 Dessins par [**Nolann MBINA IVEGA**](https://www.instagram.com/chizunokichichi/)
 
 Développement par [**Emilien BARDE**](https://twitter.com/emilien_barde) (moi)
+
+Sur la base d'un code de [**Amirouche HALFAOUI**](https://github.com/amihalfa)

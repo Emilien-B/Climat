@@ -5,10 +5,10 @@
  *  Permet de rajouter un carre qui affiche une autre image à l'intérieur
  * 
  *  Crédits :
- *  De Emilien BARDE (2021.06.19)
- *  Code original de Amirouche HALFAOUI (2012.06.04)
- *
- *  Configuration :
+ * 	Développement par Emilien BARDE (https://twitter.com/emilien_barde)
+ * 	Sur la base d'un code de Amirouche HALFAOUI (https://github.com/amihalfa)
+ * 	
+ * 	Configuration :
  *	id>   Identifiant de l'image a laquelle la fenêtre est affecteé
  *	path> Chemin de l'image à l'intérieur de la fenêtre
  *	size> Taille en pixels que doit prendre la fenêtre en hauteur et largeur
