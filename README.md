@@ -11,7 +11,7 @@
 
 # 🖥 Utilisation
 
-Vous pouvez consulter le site sur [climat.ga](https://www.climat.ga).
+Vous pouvez consulter le site sur [climat.ga](https://climat.ga).
 
 Après le **16/06/2022**, il faudra accéder au site en cliquant [ici](https://emilien-b.github.io/Climat/).
 
