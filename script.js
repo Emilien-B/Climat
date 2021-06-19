@@ -1,24 +1,25 @@
 /**
  *	Loupe sur image sous le curseur. Permet de rajouter un carre qui represente
  *	la zone survolee agrandie d'un certain facteur
- *	@author	Amirouche HALFAOUI
- *	@date	2012.06.04
- *	
+ *
+ *  Crédits:
+ *  De Emilien BARDE (2021.06.19)
+ *  Code original de Amirouche HALFAOUI (2012.06.04)
+ *
  *	@param	id		Identifiant de l'image a laquelle la loupe est affectee
- *	@param 	zoom	Facteur d'agrandissement de la loupe
+ *
  *	@param	size	Taille en pixels que doit prendre la loupe en hauteur et largeur
  */
-function MagnifyingGlass(id, zoom, size){
+function WindowOnImage(id, size, path){
 		
 		/** Element auquel ajouter la loupe */
 		var _id = id;
 		
 		/** Reference vers l'image a laquelle est attachee la loupe */
 		var _image = document.getElementById(_id);
-		
-		/** Facteur de zoom voulu */
-		var _zoom = zoom;
-		
+			
+		var _path = path;
+
 		/** Dimensions de la loupe */
 		var _size = size;
 		
@@ -73,13 +74,13 @@ function MagnifyingGlass(id, zoom, size){
 			// Image interne (plus grande que l'originale avec le facteur indique)
 			_areaimg = document.createElement("img");
 			_areaimg.id 			= name + "img";
-			_areaimg.src 			= "images/image2.png";
+			_areaimg.src 			= path;
 			 
 			
 			// Des que l'image est chargee, on lui donne la bonne taille
 			_areaimg.onload 		= function(){
-				_areaimg.style.width	= _image.width*_zoom;
-				_areaimg.style.height	= _image.height*_zoom;
+				_areaimg.style.width	= _image.width;
+				_areaimg.style.height	= _image.height;
 				
 			}
 			_areaimg.style.position	= "absolute";
@@ -115,24 +116,14 @@ function MagnifyingGlass(id, zoom, size){
 					&& xPos <= _image.width && yPos <= _image.height){
 				_area.style.left 		= x - (_size/2) + "px";
 				_area.style.top 		= y - (_size/2) + "px";
-				_areaimg.style.left 	= (-(xPos)*_zoom)+(_size/2) + "px";
-				_areaimg.style.top 		= (-(yPos)*_zoom)+(_size/2) + "px";
+				_areaimg.style.left 	= (-(xPos))+(_size/2) + "px";
+				_areaimg.style.top 		= (-(yPos))+(_size/2) + "px";
 			} else {
 				// Sinon, on cache la loupe
 				_area.style.display = "none";
 			}
-		};
-		
-		/**
-		 * Permet de modifier l'agrandissement de la loupe
-		 * @param zoom Nouveau facteur d'agrandissement voulu
-		 */
-		this.setZoom = function(zoom){
-			_zoom = zoom;
-			_areaimg.style.width	= _image.width*_zoom;
-			_areaimg.style.height	= _image.height*_zoom;
 			
-		}
+		};
 		
 		/*** Partie constructeur **/
 		// Creation de la zone
