@@ -103,6 +103,7 @@ function WindowOnImage(id, path, size){
 				x=event.pageX;
 				y=event.pageY;
 			}
+
 			
 			// On affiche la fenêtre
 			_area.style.display = "block";
