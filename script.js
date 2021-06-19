@@ -1,18 +1,21 @@
 /*
- *	fenêtre sur image sous le curseur. Permet de rajouter un carre qui represente
- *	la zone survolee agrandie d'un certain facteur
- *
- *  Crédits:
+ * 
+ *  Présentation :
+ *	Fenêtre sur image sous le curseur. 
+ *  Permet de rajouter un carre qui affiche une autre image à l'intérieur
+ * 
+ *  Crédits :
  *  De Emilien BARDE (2021.06.19)
  *  Code original de Amirouche HALFAOUI (2012.06.04)
  *
- *	@param	id		Identifiant de l'image a laquelle la fenêtre est affectee
- *
- *	@param	size	Taille en pixels que doit prendre la fenêtre en hauteur et largeur
+ *  Configuration :
+ *	id>   Identifiant de l'image a laquelle la fenêtre est affecteé
+ *	path> Chemin de l'image à l'intérieur de la fenêtre
+ *	size> Taille en pixels que doit prendre la fenêtre en hauteur et largeur
  */
 function WindowOnImage(id, path, size){
 		
-		// Elément auquel ajouter la fenêtre 
+		// Élément auquel ajouter la fenêtre 
 		var _id = id;
 		
 		// Référence vers l'image à laquelle est attachée la fenêtre 
