@@ -1,33 +1,33 @@
-/**
- *	Loupe sur image sous le curseur. Permet de rajouter un carre qui represente
+/*
+ *	fenêtre sur image sous le curseur. Permet de rajouter un carre qui represente
  *	la zone survolee agrandie d'un certain facteur
  *
  *  Crédits:
  *  De Emilien BARDE (2021.06.19)
  *  Code original de Amirouche HALFAOUI (2012.06.04)
  *
- *	@param	id		Identifiant de l'image a laquelle la loupe est affectee
+ *	@param	id		Identifiant de l'image a laquelle la fenêtre est affectee
  *
- *	@param	size	Taille en pixels que doit prendre la loupe en hauteur et largeur
+ *	@param	size	Taille en pixels que doit prendre la fenêtre en hauteur et largeur
  */
 function WindowOnImage(id, size, path){
 		
-		/** Element auquel ajouter la loupe */
+		// Elément auquel ajouter la fenêtre 
 		var _id = id;
 		
-		/** Reference vers l'image a laquelle est attachee la loupe */
+		// Référence vers l'image à laquelle est attachée la fenêtre 
 		var _image = document.getElementById(_id);
 			
 		var _path = path;
 
-		/** Dimensions de la loupe */
+		// Dimensions de la fenêtre 
 		var _size = size;
 		
 		var _area = "";
 		
 		var _areaimg ="";
 		
-		/** Ajout d'evenements a un objet (Multiplateforme) */
+		// Ajout d'evenements à un objet (Multiplateforme) 
 		addEvent = function(element, event, func) {
 			if (element.addEventListener)
 				element.addEventListener(event, func, false);
@@ -35,17 +35,17 @@ function WindowOnImage(id, size, path){
 				element.attachEvent('on' + event, func);
 		}
 		
-		/** Calcule la position d'un element par rapport a la gauche de l'ecran */
+		// Calcul de la position d'un élement par rapport à la gauche de l'écran 
 		calculateOffsetLeft = function(element){
 			return calculateOffset(element,"offsetLeft")
 		}
 		
-		/** Calcule la position d'un element par rapport au haut de l'ecran */		
+		// Calcul de la position d'un élement par rapport au haut de l'écran 		
 		calculateOffsetTop = function(element){
 			return calculateOffset(element,"offsetTop")
 		}
 		 
-		/** Calcul de la position d'une image */
+		// Calcul de la position d'une image 
 		calculateOffset = function(element,attr){
 			var offset=0;
 			while(element){
@@ -55,13 +55,10 @@ function WindowOnImage(id, size, path){
 			return offset;
 		}
 		
-		/** 
-		 * Creation de la zone qui sert de loupe 
-		 * @param name	Nom a donner a la zone
-		 */
-		createMagnifyingArea = function(name){
+		// Création de la zone qui sert de fenêtre 
+		createWindowsArea = function(name){
 			
-			// Loupe en elle-meme (DIV conteneur)
+			// Fenêtre en elle-même (DIV conteneur)
 			_area = document.createElement("div");
 			_area.id 	    	    	= name;
 			_area.style.width          	= _size + "px";
@@ -71,13 +68,13 @@ function WindowOnImage(id, size, path){
 			_area.style.overflow    	= "hidden";
 			_area.style.border          = "3px solid white"; 
 			
-			// Image interne (plus grande que l'originale avec le facteur indique)
+			// Image interne
 			_areaimg = document.createElement("img");
-			_areaimg.id 			= name + "img";
+			_areaimg.id 			= "ImageInWindow";
 			_areaimg.src 			= path;
 			 
 			
-			// Des que l'image est chargee, on lui donne la bonne taille
+			// Dès que l'image est chargée, on lui donne la bonne taille
 			_areaimg.onload 		= function(){
 				_areaimg.style.width	= _image.width;
 				_areaimg.style.height	= _image.height;
@@ -85,15 +82,15 @@ function WindowOnImage(id, size, path){
 			}
 			_areaimg.style.position	= "absolute";
 			
-			// On ajoute le tout a la page
+			// On ajoute le tout à la page
 			_area.appendChild(_areaimg); 
 			document.body.appendChild(_area);
 		}
 		
-		/** Fonction qui reagit lors du mouvement de la souris sur l'image */
+		// Fonction qui réagit lors du mouvement de la souris sur l'image 
 		handleMouseMove = function(event){
 			
-			// Recuperation de la position du curseur
+			// Récupération de la position du curseur
 			var x, y;
 			var ie = false; /*@cc_on ie = true; @*/
 			if (ie) {
@@ -104,14 +101,14 @@ function WindowOnImage(id, size, path){
 				y=event.pageY;
 			}
 			
-			// On affiche la loupe
+			// On affiche la fenêtre
 			_area.style.display = "block";
 			
 			// Position du curseur sur l'image
 			xPos = x - calculateOffsetLeft(_image);
 			yPos = y - calculateOffsetTop(_image);
 			
-			// On met a jour uniquement si le curseur est sur l'image
+			// On met à jour uniquement si le curseur est sur l'image
 			if(	xPos >= 0 && yPos >= 0 
 					&& xPos <= _image.width && yPos <= _image.height){
 				_area.style.left 		= x - (_size/2) + "px";
@@ -119,17 +116,18 @@ function WindowOnImage(id, size, path){
 				_areaimg.style.left 	= (-(xPos))+(_size/2) + "px";
 				_areaimg.style.top 		= (-(yPos))+(_size/2) + "px";
 			} else {
-				// Sinon, on cache la loupe
+				// Sinon, on cache la fenêtre
 				_area.style.display = "none";
 			}
 			
 		};
 		
-		/*** Partie constructeur **/
-		// Creation de la zone
-		createMagnifyingArea("ma" + _id);
+		// Partie constructeur :
+
+		// Création de la zone
+		createWindowsArea("ma" + _id);
 		
-		// Ajout des evenements
+		// Ajout des évènements
 		addEvent(_image, "mouseover", handleMouseMove);
 		addEvent(_area, "mousemove", handleMouseMove);
 		
