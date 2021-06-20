@@ -95,7 +95,7 @@ function WindowOnImage(id, path, size){
 			
 			// Récupération de la position du curseur
 			var x, y;
-			var ie = false; /*@cc_on ie = true; @*/
+			var ie = false;
 			if (ie) {
 				x=event.x+document.body.scrollLeft;
 				y=event.y+document.body.scrollTop;
