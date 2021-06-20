@@ -1,7 +1,7 @@
 # ⚠️ PROJET EN COURS ⚠️
 
 # 📖 Présentation
-J'ai réalisé ce projet pour notre collège avec [**Nolann MBINA IVEGA**]() qui a fait les dessins. 
+J'ai réalisé ce projet pour notre collège avec [**Nolann MBINA IVEGA**](https://github.com/Emilien-B/Climat#-cr%C3%A9dits) qui a fait les dessins. 
 
 Le site a pour but de sensibiliser sur les conséquences du changement climatique.
 En passant la souris sur le paysage paradisiaque, vous découvrirez un paysage apocalyptique du futur.
