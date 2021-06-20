@@ -2,7 +2,6 @@
 
 # 📖 Présentation
 
-
 # 🖥 Utilisation
 
 Vous pouvez consulter le site sur [climat.ga](https://climat.ga).
