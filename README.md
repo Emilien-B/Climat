@@ -17,6 +17,8 @@ Après le **16/06/2022**, il faudra accéder au site en cliquant [ici](https://e
 
 Vous pourrez toujours [télécharger les fichiers](https://github.com/Emilien-B/Climat/archive/refs/heads/main.zip) de la page et exécuter `index.html`.
 
+### ⚠️ Le site n'est pas compatible mobile.
+
 # 📝 Crédits
 
 Dessins par [**Nolann MBINA IVEGA**](https://www.instagram.com/chizunokichichi/)
