@@ -3,7 +3,7 @@
 # 📖 Présentation
 J'ai réalisé ce projet pour notre collège avec [**Nolann MBINA IVEGA**]() qui a fait les dessins. 
 
-Le site a pour but de sensibiliser sur le changement climatique.
+Le site a pour but de sensibiliser sur les conséquences du changement climatique.
 En passant la souris sur le paysage paradisiaque, vous découvrirez le paysage apocalyptique du futur.
 
 # 🖥 Utilisation
