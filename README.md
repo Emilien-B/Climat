@@ -1,7 +1,7 @@
 # ⚠️ PROJET EN COURS ⚠️
 
 # 📖 Présentation
-J'ai réalisé ce projet avec [**Nolann MBINA IVEGA**]() qui a fait les dessin pour notre collège. 
+J'ai réalisé ce projet avec [**Nolann MBINA IVEGA**]() qui a fait les dessins pour notre collège. 
 
 Le site a pour but de sensibiliser sur le changement climatique.
 En passant la souris sur le paysage paradisiaque, vous découvrirez le paysage apocalyptique du futur.
