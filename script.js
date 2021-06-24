@@ -81,6 +81,7 @@ function WindowOnImage(id, path, size){
 			_areaimg.onload 		= function(){
 				_areaimg.style.width	= _image.width;
 				_areaimg.style.height	= _image.height;
+		  		_areaimg.style.border="7px solid white";
 				
 			}
 			_areaimg.style.position	= "absolute";
