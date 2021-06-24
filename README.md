@@ -6,6 +6,8 @@ J'ai réalisé ce projet pour notre collège avec [**Nolann MBINA IVEGA**](https
 Le site a pour but de sensibiliser sur les conséquences du changement climatique.
 En passant la souris sur le paysage paradisiaque, vous découvrirez un paysage apocalyptique du futur.
 
+<img id="image" src="ex.png" class="image" style="float: center; height:200px">
+
 # 🖥 Utilisation
 
 Vous pouvez consulter le site sur [**climat.ga**](https://climat.ga).
