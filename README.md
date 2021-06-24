@@ -1,5 +1,3 @@
-# ⚠️ PROJET EN COURS ⚠️
-
 # 📖 Présentation
 J'ai réalisé ce projet pour notre collège avec [**Nolann MBINA IVEGA**](https://github.com/Emilien-B/Climat#-cr%C3%A9dits) qui a fait les dessins. 
 
