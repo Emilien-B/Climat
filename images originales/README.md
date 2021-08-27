@@ -1,1 +1,0 @@
-### ✏️ Dossier contenant les dessins originaux 
