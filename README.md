@@ -8,11 +8,9 @@ En passant la souris sur le paysage paradisiaque, vous découvrirez un paysage a
 
 # 🖥 Utilisation
 
-Vous pouvez consulter le site sur [**climat.ga**](https://climat.ga).
+Vous pouvez consulter le site sur [**emilien-b.github.io/climat**](https://emilien-b.github.io/Climat/).
 
-Après le **16/06/2022**, il faudra accéder au site en cliquant [ici](https://emilien-b.github.io/Climat/).
-
->Vous pourrez toujours [**télécharger les fichiers**](https://github.com/Emilien-B/Climat/archive/refs/heads/main.zip) de la page et **lancer `index.html`**.
+>Vous pouvez aussi [**télécharger les fichiers**](https://github.com/Emilien-B/Climat/archive/refs/heads/main.zip) de la page et **lancer `index.html`**.
 
 ### ⚠️ Le site n'est pas disponible sur mobile.
 
@@ -20,6 +18,6 @@ Après le **16/06/2022**, il faudra accéder au site en cliquant [ici](https://e
 
 Dessins par [**Nolann MBINA IVEGA**](https://www.instagram.com/chizunokichichi/)
 
-Développement par [**Emilien BARDE**](https://twitter.com/emilien_barde) (moi)
+Développement par [**Emilien BARDE**](https://twitter.com/by_emilienb) (moi)
 
 Sur la base d'un code de [**Amirouche HALFAOUI**](https://github.com/amihalfa)
